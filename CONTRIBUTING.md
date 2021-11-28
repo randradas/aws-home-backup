@@ -34,13 +34,6 @@ This project uses [Conventional Commits](https://www.conventionalcommits.org/en/
 There are three important parts in a pull request:
 - **Title**. Use a well descriptive but not too long message about what this change is about.
 - **Description**. Do your best to put only relevant information. It is perfectly valid to leave it empty! But please, don't leave all your commit messages there.
-- **Destination branch**. The destination branch is determined by the [Branching Strategy](#branching-strategy) section you can find below.
-
-Additionally, there are other fields that can be useful:
-
-- **Asignee**. Set one or multiple assignees.
-
-Finally, when the work is still in progress remember to set the PR as draft like explaine in the [GitHub documentation](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/changing-the-stage-of-a-pull-request).
 
 ## Branching Strategy
 
@@ -48,25 +41,15 @@ This is the set of rules that drives the workflow.
 
 ### Default branch
 
-**main**.
-- Protected branch, only changes through pull request are accepted.
-- Changes come from a `feat` or `fix` branch
-- Merge strategy is **always** `--squash`
-- Releases are triggered manually from this branch
+**main**. Protected branch, only changes through pull request are accepted. Changes come from a `feat` or `fix` branch. Merge strategy is **always** `--squash`
 
 ### Supporting branches
 
 **feature branches**
-- One branch per *feature*
-- May branch off from `main`
-- Naming convention is `feat/FEAT-NAME`
+- One branch per *feature*. May branch off from `main`. Naming convention is `feat/FEAT-NAME`
 
 **bugfix branches**
-- One branch per *bugfix*
-- May branch off from `main`
-- Naming convention is `fix/FIX-NAME`
+- One branch per *bugfix*. May branch off from `main`. Naming convention is `fix/FIX-NAME`
 
 **revert branches**
-- One branch per *revert*
-- May branch off from `main`
-- Naming convention is `revert/REVERT-NAME`
+- One branch per *revert*. May branch off from `main`. Naming convention is `revert/REVERT-NAME`
