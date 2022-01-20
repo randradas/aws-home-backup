@@ -1,7 +1,9 @@
 name: Lint Code Base
 on:
   pull_request:
-    branches: [master, main]
+    branches: [main]
+  push:
+    branches: [main]
 jobs:
   Linting:
     runs-on: ubuntu-latest
